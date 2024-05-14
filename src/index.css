@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+  background-image: linear-gradient(
+      to right,
+      rgba(43, 44, 42, 0.8),
+      rgba(20, 21, 10, 0.8)
+    ),
+    url(./assets/hunt-tiger.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+}
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
+}
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: #fff;
+}
+.game input {
+  border: none;
+  outline: none;
+  padding: 15px 30px;
+  border-radius: 40px;
+  font-size: 20px;
+}
+.game label {
+  font-size: 20px;
+}
+.game__start {
+  padding: 10px 25px;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+}
+.stop__game {
+  border: none;
+  outline: none;
+  border-radius: 14px;
+  padding: 10px 20px;
+  font-size: 22px;
+  color: #1573d0;
+}
+#level {
+  padding: 8px 30px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  color: #1573d0;
+}
+
+.circles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.circle {
+  background-color: transparent;
+  border: 1px solid #1573d0;
+  border-radius: 50%;
+  color: #5b5b5b;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle.active {
+  background: url('./assets/tiger.png') center center/cover;
+}
+
+.score {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(73, 73, 73, 0.8);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  color: #1573d0;
+}
+
+.gameover {
+  background: white;
+  padding: 1rem;
+  width: 40%;
+  min-height: 25%;
+  border-radius: 5px;
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.gameover button {
+  background-color: red;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.game_stats {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.game_stats p {
+  margin: 0;
+  padding: 10px;
+}
